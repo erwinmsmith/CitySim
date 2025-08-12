@@ -1,0 +1,2170 @@
+{
+  "simulation_info": {
+    "city": "beijing",
+    "start_time": "2025-08-07T15:32:20.370340",
+    "status": "completed",
+    "end_time": "2025-08-07T16:43:26.147024"
+  },
+  "rounds": [],
+  "summary": {
+    "total_rounds": 5,
+    "total_interactions": 5,
+    "total_errors": 0,
+    "last_update": "2025-08-07T16:43:26.137401"
+  },
+  "events": [
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T15:32:21.486426",
+      "data": {
+        "round": -1,
+        "timestamp": "2025-08-07T15:32:21.477808",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T15:32:21.491921",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:32:21.486851",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:32:57.131601",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:32:57.125106",
+        "agent_type": "government",
+        "agent_id": "gov_0",
+        "decision": {
+          "action": "internal_policy_adjustment",
+          "target": "public_service_distribution",
+          "reason": "To ensure equalization of public services across all districts in Beijing, addressing core policy goal of 公共服务均等化 through administrative directives",
+          "expected_outcome": "More equitable distribution of public services, reduced service disparities between districts, enhanced social stability",
+          "priority_level": "high",
+          "resource_allocation": "Budget: 40/100 for service infrastructure in underserved areas, Personnel: Reallocate 30% of digital governance staff to monitor and implement equalization measures"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:33:22.255766",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:33:22.255568",
+        "agent_type": "enterprise",
+        "agent_id": "ent_0",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Combine government open data with enterprise reports to create comprehensive project proposals",
+          "innovation_focus": "Improve data integration techniques to enhance project delivery",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "65%"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:33:37.014320",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:33:37.006766",
+        "agent_type": "enterprise",
+        "agent_id": "ent_1",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Government open data, Enterprise reports",
+          "innovation_focus": "Improving service delivery efficiency",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "Medium"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:34:05.340591",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:34:05.340368",
+        "agent_type": "enterprise",
+        "agent_id": "ent_2",
+        "decision": {
+          "action": "Interact with government",
+          "target": "project bidding",
+          "data_usage": "Government open data and Enterprise reports",
+          "innovation_focus": "Compliance-driven solutions for government projects",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "Medium-high"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:34:54.239633",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:34:54.239370",
+        "agent_type": "resident",
+        "agent_id": "res_0",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": 3,
+          "concern": "service_fairness",
+          "usage_intention": 4,
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:35:23.617748",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:35:23.610045",
+        "agent_type": "resident",
+        "agent_id": "res_1",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": "3",
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:35:59.490038",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:35:59.481726",
+        "agent_type": "resident",
+        "agent_id": "res_2",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "government",
+          "satisfaction": "4",
+          "concern": "service fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:36:24.294193",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:36:24.286411",
+        "agent_type": "resident",
+        "agent_id": "res_3",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness across different areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:36:43.157641",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:36:43.150934",
+        "agent_type": "resident",
+        "agent_id": "res_4",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:37:07.629144",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:37:07.621512",
+        "agent_type": "resident",
+        "agent_id": "res_5",
+        "decision": {
+          "action": "use digital services",
+          "target": "public services",
+          "satisfaction": "4",
+          "concern": "service fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:37:34.041591",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:37:34.033907",
+        "agent_type": "resident",
+        "agent_id": "res_6",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality improvement in urban_rural_fringe",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:37:56.292887",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:37:56.292630",
+        "agent_type": "resident",
+        "agent_id": "res_7",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality disparity",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:38:20.750187",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:38:20.742858",
+        "agent_type": "resident",
+        "agent_id": "res_8",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "4",
+          "concern": "Service accessibility",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:38:49.090276",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:38:49.082243",
+        "agent_type": "resident",
+        "agent_id": "res_9",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality disparity between areas",
+          "satisfaction": "4",
+          "concern": "Service fairness between urban and rural areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "interactions",
+      "timestamp": "2025-08-07T15:49:22.929548",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:49:22.929259",
+        "interaction_count": 1,
+        "interactions": [
+          {
+            "type": "information_sharing",
+            "participants": [
+              "resident_15",
+              "resident_2"
+            ],
+            "outcome": "success",
+            "effect": "knowledge_transfer"
+          }
+        ]
+      }
+    },
+    {
+      "type": "environment_update",
+      "timestamp": "2025-08-07T15:49:22.938670",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:49:22.930382",
+        "environment_state": {
+          "digital_infrastructure": {
+            "core_area": 90.8363010966539,
+            "urban_rural_fringe": 60.91274255981665,
+            "rural": 40.990982839070625
+          },
+          "physical_infrastructure": {
+            "core_area": 95,
+            "urban_rural_fringe": 80,
+            "rural": 60
+          },
+          "policy_environment": {
+            "stability": 90,
+            "unified_control": 85,
+            "risk_management": 95
+          },
+          "service_availability": 1.0,
+          "system_load": 0.35,
+          "emergency_status": false,
+          "service_quality": {
+            "core_area": 0.915,
+            "urban_rural_fringe": 0.7,
+            "rural": 0.6
+          },
+          "infrastructure_utilization": {
+            "digital": 0.48,
+            "physical": 0.5599999999999999
+          },
+          "update_count": 1
+        }
+      }
+    },
+    {
+      "type": "round_complete",
+      "timestamp": "2025-08-07T15:49:22.945071",
+      "data": {
+        "round": 0,
+        "timestamp": "2025-08-07T15:49:22.939487",
+        "status": "completed"
+      }
+    },
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T15:49:22.957535",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:49:22.952587",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:50:25.359011",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:50:25.350705",
+        "agent_type": "government",
+        "agent_id": "gov_0",
+        "decision": {
+          "action": "data_sharing",
+          "target": "enterprises",
+          "reason": "To improve data sharing from the current low level (30/100) which will enable better coordination of public services and support the goal of service equalization across Beijing",
+          "expected_outcome": "Increased data sharing will lead to more efficient resource allocation, better service coverage in underserved areas, and improved social risk monitoring capabilities",
+          "priority_level": "high",
+          "resource_allocation": "Allocate 20% of budget to develop secure data sharing infrastructure and standards, assign technical team to implement data governance framework"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:51:22.789509",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:51:22.781223",
+        "agent_type": "enterprise",
+        "agent_id": "ent_0",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Government open data",
+          "innovation_focus": "Compliant data integration solutions",
+          "investment_amount": "Moderate",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "Stable returns with government contract security"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:52:48.787921",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:52:48.787535",
+        "agent_type": "enterprise",
+        "agent_id": "ent_1",
+        "decision": {
+          "action": "interact with government",
+          "target": "government agencies",
+          "data_usage": "government open data",
+          "innovation_focus": "compliant project implementation",
+          "investment_amount": "moderate",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "moderate"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:53:11.594017",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:53:11.585631",
+        "agent_type": "enterprise",
+        "agent_id": "ent_2",
+        "decision": {
+          "action": "interact_with_government",
+          "target": "project_bidding",
+          "data_usage": "government_open_data",
+          "innovation_focus": "compliant_data_integration",
+          "investment_amount": "medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "medium_to_high"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:53:45.738994",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:53:45.730356",
+        "agent_type": "resident",
+        "agent_id": "res_0",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Government services",
+          "satisfaction": "2",
+          "concern": "Service fairness between rural and urban areas",
+          "usage_intention": "moderate",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:54:58.154757",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:54:58.154425",
+        "agent_type": "resident",
+        "agent_id": "res_1",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality disparity between urban_rural_fringe and core areas",
+          "satisfaction": "2",
+          "concern": "Service fairness between different areas of Beijing",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:55:28.761008",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:55:28.752644",
+        "agent_type": "resident",
+        "agent_id": "res_2",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Digital governance services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:56:29.715421",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:56:29.707371",
+        "agent_type": "resident",
+        "agent_id": "res_3",
+        "decision": {
+          "action": "provide_feedback_to_government",
+          "target": "digital_governance_services",
+          "satisfaction": "4",
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:56:51.708191",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:56:51.707841",
+        "agent_type": "resident",
+        "agent_id": "res_4",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "government_services",
+          "satisfaction": 3,
+          "concern": "service_fairness",
+          "usage_intention": 4,
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:57:07.357918",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:57:07.349819",
+        "agent_type": "resident",
+        "agent_id": "res_5",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:57:40.340836",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:57:40.332959",
+        "agent_type": "resident",
+        "agent_id": "res_6",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between core areas and urban-rural fringe",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:58:13.391543",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:58:13.383730",
+        "agent_type": "resident",
+        "agent_id": "res_7",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality disparity between core area and urban-rural fringe",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T15:58:56.652249",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T15:58:56.644234",
+        "agent_type": "resident",
+        "agent_id": "res_8",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:00:12.164275",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T16:00:12.156438",
+        "agent_type": "resident",
+        "agent_id": "res_9",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": 4,
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Agree",
+          "data_sharing_consent_enterprises": "Conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "interactions",
+      "timestamp": "2025-08-07T16:05:37.856549",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T16:05:37.856146",
+        "interaction_count": 3,
+        "interactions": [
+          {
+            "type": "data_sharing",
+            "participants": [
+              "government",
+              "enterprise_0"
+            ],
+            "outcome": "success",
+            "effect": "促进企业创新"
+          },
+          {
+            "type": "data_sharing",
+            "participants": [
+              "government",
+              "enterprise_1"
+            ],
+            "outcome": "denied",
+            "effect": "促进企业创新"
+          },
+          {
+            "type": "data_sharing",
+            "participants": [
+              "government",
+              "enterprise_2"
+            ],
+            "outcome": "denied",
+            "effect": "促进企业创新"
+          }
+        ]
+      }
+    },
+    {
+      "type": "environment_update",
+      "timestamp": "2025-08-07T16:05:37.866329",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T16:05:37.857910",
+        "environment_state": {
+          "digital_infrastructure": {
+            "core_area": 90.34236487694315,
+            "urban_rural_fringe": 60.25723688483499,
+            "rural": 41.64752454015015
+          },
+          "physical_infrastructure": {
+            "core_area": 95,
+            "urban_rural_fringe": 80,
+            "rural": 60
+          },
+          "policy_environment": {
+            "stability": 90,
+            "unified_control": 85,
+            "risk_management": 95
+          },
+          "service_availability": 1.0,
+          "system_load": 0.24499999999999997,
+          "emergency_status": false,
+          "service_quality": {
+            "core_area": 0.8966666666666667,
+            "urban_rural_fringe": 0.7,
+            "rural": 0.6
+          },
+          "infrastructure_utilization": {
+            "digital": 0.384,
+            "physical": 0.44799999999999995
+          },
+          "update_count": 2
+        }
+      }
+    },
+    {
+      "type": "round_complete",
+      "timestamp": "2025-08-07T16:05:37.874619",
+      "data": {
+        "round": 1,
+        "timestamp": "2025-08-07T16:05:37.868330",
+        "status": "completed"
+      }
+    },
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T16:05:37.890232",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:05:37.885293",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:06:10.655631",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:06:10.655205",
+        "agent_type": "government",
+        "agent_id": "gov_0",
+        "decision": {
+          "action": "service_provision",
+          "target": "residents",
+          "reason": "To advance the goal of equalizing public services across Beijing's diverse districts and populations, focusing on identifying and addressing service gaps. With strong financial resources and technical capability, combined with low system load, this is an optimal time to enhance service delivery and ensure fairness in access.",
+          "expected_outcome": "Improved understanding of service distribution across Beijing, identification of underserved areas and populations, and development of targeted interventions to promote service equalization while maintaining system stability.",
+          "priority_level": "high",
+          "resource_allocation": "Allocate 35% of available budget to comprehensive service assessment and enhancement programs, with technical personnel deployed to analyze service distribution patterns and identify equity gaps. Establish monitoring systems to track service accessibility metrics across all districts."
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:06:35.608520",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:06:35.600200",
+        "agent_type": "enterprise",
+        "agent_id": "ent_0",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Government open data",
+          "innovation_focus": "Compliant data integration solutions",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "moderate"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:06:54.843475",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:06:54.834268",
+        "agent_type": "enterprise",
+        "agent_id": "ent_1",
+        "decision": {
+          "action": "interact_with_government",
+          "target": "municipal_government",
+          "data_usage": "government_open_data_integration",
+          "innovation_focus": "efficient_service_delivery",
+          "investment_amount": "medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "moderate"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:07:18.034501",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:07:18.026796",
+        "agent_type": "enterprise",
+        "agent_id": "ent_2",
+        "decision": {
+          "action": "Interact with government",
+          "target": "government agencies",
+          "data_usage": "Government open data",
+          "innovation_focus": "Government service optimization",
+          "investment_amount": "3,000,000 CNY",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "15%"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:08:07.969875",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:08:07.961115",
+        "agent_type": "resident",
+        "agent_id": "res_0",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": 3,
+          "concern": "service_fairness",
+          "usage_intention": 4,
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:08:52.117222",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:08:52.108607",
+        "agent_type": "resident",
+        "agent_id": "res_1",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Digital governance services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:09:09.927643",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:09:09.919525",
+        "agent_type": "resident",
+        "agent_id": "res_2",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Agree",
+          "data_sharing_consent_enterprises": "Conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:09:52.062648",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:09:52.054266",
+        "agent_type": "resident",
+        "agent_id": "res_3",
+        "decision": {
+          "action": "use digital services",
+          "target": "digital governance services",
+          "satisfaction": "4",
+          "concern": "service fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_conprises": "disagree",
+          "service_priority": "public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:10:27.492508",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:10:27.484551",
+        "agent_type": "resident",
+        "agent_id": "res_4",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "Willing to continue using if services become more user-friendly",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:10:50.127294",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:10:50.126852",
+        "agent_type": "resident",
+        "agent_id": "res_5",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "digital_governance_services",
+          "satisfaction": "4",
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:11:11.393093",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:11:11.384504",
+        "agent_type": "resident",
+        "agent_id": "res_6",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between core areas and urban rural fringe",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:11:38.857167",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:11:38.849283",
+        "agent_type": "resident",
+        "agent_id": "res_7",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Digital governance services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban-rural fringe and core areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Agree",
+          "data_sharing_consent_enterprises": "Conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:12:06.993538",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:12:06.985382",
+        "agent_type": "resident",
+        "agent_id": "res_8",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "4",
+          "concern": "Service fairness between different areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:12:23.185737",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:12:23.178162",
+        "agent_type": "resident",
+        "agent_id": "res_9",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": "4",
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "interactions",
+      "timestamp": "2025-08-07T16:17:34.560788",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:17:34.560145",
+        "interaction_count": 21,
+        "interactions": [
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_5"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_15"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_0"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "rural",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_11"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "physical"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_10"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_4"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_6"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_14"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "rural",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_1"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "physical"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_16"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "rural",
+            "service_type": "physical"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_2"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_12"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "physical"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_17"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_13"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_3"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_19"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_9"
+            ],
+            "outcome": "failed",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_7"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "urban_rural_fringe",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_18"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "service_provision",
+            "participants": [
+              "government",
+              "resident_8"
+            ],
+            "outcome": "success",
+            "effect": "提升居民满意度",
+            "area": "core_area",
+            "service_type": "digital"
+          },
+          {
+            "type": "information_sharing",
+            "participants": [
+              "resident_8",
+              "resident_2"
+            ],
+            "outcome": "success",
+            "effect": "knowledge_transfer"
+          }
+        ]
+      }
+    },
+    {
+      "type": "environment_update",
+      "timestamp": "2025-08-07T16:17:34.572875",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:17:34.563081",
+        "environment_state": {
+          "digital_infrastructure": {
+            "core_area": 89.51772702180783,
+            "urban_rural_fringe": 60.62011357116285,
+            "rural": 41.55102102206724
+          },
+          "physical_infrastructure": {
+            "core_area": 95,
+            "urban_rural_fringe": 80,
+            "rural": 60
+          },
+          "policy_environment": {
+            "stability": 90,
+            "unified_control": 85,
+            "risk_management": 95
+          },
+          "service_availability": 1.0,
+          "system_load": 0.17149999999999996,
+          "emergency_status": false,
+          "service_quality": {
+            "core_area": 0.895,
+            "urban_rural_fringe": 0.6983333333333333,
+            "rural": 0.5816666666666667
+          },
+          "infrastructure_utilization": {
+            "digital": 0.4595809523809524,
+            "physical": 0.3964952380952381
+          },
+          "update_count": 3
+        }
+      }
+    },
+    {
+      "type": "round_complete",
+      "timestamp": "2025-08-07T16:17:34.584368",
+      "data": {
+        "round": 2,
+        "timestamp": "2025-08-07T16:17:34.575985",
+        "status": "completed"
+      }
+    },
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T16:17:34.605184",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:17:34.596693",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:18:32.444130",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:18:32.435786",
+        "agent_type": "government",
+        "agent_id": "gov_0",
+        "decision": {
+          "action": "internal_policy_adjustment",
+          "target": "data_sharing_framework",
+          "reason": "To establish a robust internal data sharing framework that will support equalization of public services and enhance social risk prevention capabilities",
+          "expected_outcome": "Development of standardized data collection and sharing protocols across municipal departments, increasing internal data sharing to 60/100 and laying groundwork for future enterprise collaboration",
+          "priority_level": "high",
+          "resource_allocation": "Budget allocation of 25/100 for framework development and implementation, personnel allocation of 30/100 for inter-departmental coordination and oversight"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:19:01.777729",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:19:01.769243",
+        "agent_type": "enterprise",
+        "agent_id": "ent_0",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Beijing municipal government agencies",
+          "data_usage": "Government open data for project proposal development",
+          "innovation_focus": "Enhancing existing government service delivery efficiency",
+          "investment_amount": "3 million yuan",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "25%"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:19:16.952307",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:19:16.943840",
+        "agent_type": "enterprise",
+        "agent_id": "ent_1",
+        "decision": {
+          "action": "project bidding",
+          "target": "Beijing Municipal Government",
+          "data_usage": "Leverage government open data to strengthen bid proposal",
+          "innovation_focus": "Improving service delivery efficiency",
+          "investment_amount": "moderate",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "medium"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:19:40.404680",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:19:40.395523",
+        "agent_type": "enterprise",
+        "agent_id": "ent_2",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Government open data",
+          "innovation_focus": "Service delivery optimization",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "medium"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:20:53.768315",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:20:53.767395",
+        "agent_type": "resident",
+        "agent_id": "res_0",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban and rural areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:21:23.149468",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:21:23.141733",
+        "agent_type": "resident",
+        "agent_id": "res_1",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": 3,
+          "concern": "Service fairness",
+          "usage_intention": "Medium",
+          "data_sharing_consent_government": "Conditional",
+          "data_sharing_consent_enterprises": "Disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:21:39.107317",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:21:39.098973",
+        "agent_type": "resident",
+        "agent_id": "res_2",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": 4,
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:22:06.597467",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:22:06.589283",
+        "agent_type": "resident",
+        "agent_id": "res_3",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Conditional",
+          "data_sharing_consent_enterprises": "Disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:23:16.073179",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:23:16.072590",
+        "agent_type": "resident",
+        "agent_id": "res_4",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban core and fringe areas",
+          "usage_intention": "Regular user despite some difficulties",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:24:07.232077",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:24:07.224246",
+        "agent_type": "resident",
+        "agent_id": "res_5",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "4",
+          "concern": "Service fairness between different areas",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:24:47.989610",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:24:47.988998",
+        "agent_type": "resident",
+        "agent_id": "res_6",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between core areas and urban-rural fringe",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:26:10.662782",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:26:10.654256",
+        "agent_type": "resident",
+        "agent_id": "res_7",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "3",
+          "concern": "Service fairness between urban areas and urban-rural fringe",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:26:31.542195",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:26:31.534377",
+        "agent_type": "resident",
+        "agent_id": "res_8",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": 4,
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Conditional",
+          "data_sharing_consent_enterprises": "Disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:27:11.812491",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:27:11.801934",
+        "agent_type": "resident",
+        "agent_id": "res_9",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Public services",
+          "satisfaction": "4",
+          "concern": "Service fairness between different areas of Beijing",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "interactions",
+      "timestamp": "2025-08-07T16:31:34.077292",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:31:34.076691",
+        "interaction_count": 0,
+        "interactions": []
+      }
+    },
+    {
+      "type": "environment_update",
+      "timestamp": "2025-08-07T16:31:34.088295",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:31:34.079586",
+        "environment_state": {
+          "digital_infrastructure": {
+            "core_area": 90.021355616338,
+            "urban_rural_fringe": 60.96053708598964,
+            "rural": 41.80767682635714
+          },
+          "physical_infrastructure": {
+            "core_area": 95,
+            "urban_rural_fringe": 80,
+            "rural": 60
+          },
+          "policy_environment": {
+            "stability": 90,
+            "unified_control": 85,
+            "risk_management": 95
+          },
+          "service_availability": 1.0,
+          "system_load": 0.12004999999999996,
+          "emergency_status": false,
+          "service_quality": {
+            "core_area": 0.895,
+            "urban_rural_fringe": 0.6983333333333333,
+            "rural": 0.5816666666666667
+          },
+          "infrastructure_utilization": {
+            "digital": 0.4595809523809524,
+            "physical": 0.3964952380952381
+          },
+          "update_count": 4
+        }
+      }
+    },
+    {
+      "type": "round_complete",
+      "timestamp": "2025-08-07T16:31:34.096353",
+      "data": {
+        "round": 3,
+        "timestamp": "2025-08-07T16:31:34.090675",
+        "status": "completed"
+      }
+    },
+    {
+      "type": "round_start",
+      "timestamp": "2025-08-07T16:31:34.112432",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:31:34.106555",
+        "agent_counts": {
+          "government": 1,
+          "enterprises": 3,
+          "residents": 20
+        }
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:32:58.298355",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:32:58.289739",
+        "agent_type": "government",
+        "agent_id": "gov_0",
+        "decision": {
+          "action": "internal_policy_adjustment",
+          "target": "data_sharing_policy",
+          "reason": "Current data sharing level is low (30/100), which hinders both the equalization of public services and social risk prevention and control. As per the Beijing model's emphasis on strict regulation, implementing administrative orders to improve data sharing policies will ensure consistent compliance across all stakeholders, enabling better identification of underserved areas and potential social risks.",
+          "expected_outcome": "Increase data sharing level to at least 55/100 within 5 months, leading to better identification of service gaps, more equitable resource allocation, and enhanced ability to identify and mitigate social risks.",
+          "priority_level": "high",
+          "resource_allocation": "Budget: 20/100 for policy implementation, monitoring, and enforcement; Personnel: Policy team (12 people) for 5 months, IT support team (8 people) for technical implementation, Compliance team (6 people) for monitoring and enforcement"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:33:15.381776",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:33:15.373889",
+        "agent_type": "enterprise",
+        "agent_id": "ent_0",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Project bidding",
+          "data_usage": "Government open data",
+          "innovation_focus": "Process optimization",
+          "investment_amount": 2000000,
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": 25
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:33:26.887528",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:33:26.878826",
+        "agent_type": "enterprise",
+        "agent_id": "ent_1",
+        "decision": {
+          "action": "Interact with government",
+          "target": "Beijing municipal government",
+          "data_usage": "Leverage government open data and enterprise reports for project bidding",
+          "innovation_focus": "Moderate innovation in service delivery models for government projects",
+          "investment_amount": "Medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "Medium to high"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:34:02.382961",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:34:02.374786",
+        "agent_type": "enterprise",
+        "agent_id": "ent_2",
+        "decision": {
+          "action": "interact with government",
+          "target": "government agencies",
+          "data_usage": "government open data",
+          "innovation_focus": "efficient service delivery",
+          "investment_amount": "medium",
+          "regulatory_risk": "low",
+          "market_risk": "medium",
+          "expected_roi": "medium"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:34:55.290388",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:34:55.289409",
+        "agent_type": "resident",
+        "agent_id": "res_0",
+        "decision": {
+          "action": "Provide feedback to government",
+          "target": "Service quality disparity between rural and urban areas",
+          "satisfaction": "2",
+          "concern": "Service fairness between rural and urban areas",
+          "usage_intention": "4",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:35:13.533847",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:35:13.525023",
+        "agent_type": "resident",
+        "agent_id": "res_1",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "3",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Agree",
+          "data_sharing_consent_enterprises": "Conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:35:39.723007",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:35:39.714902",
+        "agent_type": "resident",
+        "agent_id": "res_2",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Conditional",
+          "data_sharing_consent_enterprises": "Disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:35:56.116995",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:35:56.109854",
+        "agent_type": "resident",
+        "agent_id": "res_3",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:36:18.703908",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:36:18.694837",
+        "agent_type": "resident",
+        "agent_id": "res_4",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": 3,
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:36:34.497777",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:36:34.489067",
+        "agent_type": "resident",
+        "agent_id": "res_5",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:36:54.983950",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:36:54.975727",
+        "agent_type": "resident",
+        "agent_id": "res_6",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": "3",
+          "concern": "service_fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "agree",
+          "data_sharing_consent_enterprises": "conditional",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:37:44.021028",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:37:44.012534",
+        "agent_type": "resident",
+        "agent_id": "res_7",
+        "decision": {
+          "action": "use_digital_services",
+          "target": "public_services",
+          "satisfaction": 3,
+          "concern": "service_fairness",
+          "usage_intention": 4,
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public_services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:38:17.624131",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:38:17.616374",
+        "agent_type": "resident",
+        "agent_id": "res_8",
+        "decision": {
+          "action": "Use digital services",
+          "target": "Digital governance services",
+          "satisfaction": "4",
+          "concern": "Service fairness",
+          "usage_intention": "High",
+          "data_sharing_consent_government": "Conditional",
+          "data_sharing_consent_enterprises": "Disagree",
+          "service_priority": "Public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "agent_decision",
+      "timestamp": "2025-08-07T16:38:35.042006",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:38:35.033967",
+        "agent_type": "resident",
+        "agent_id": "res_9",
+        "decision": {
+          "action": "use digital services",
+          "target": "digital governance services",
+          "satisfaction": 4,
+          "concern": "service fairness",
+          "usage_intention": "high",
+          "data_sharing_consent_government": "conditional",
+          "data_sharing_consent_enterprises": "disagree",
+          "service_priority": "public services"
+        },
+        "is_fallback": false
+      }
+    },
+    {
+      "type": "interactions",
+      "timestamp": "2025-08-07T16:43:26.094550",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:43:26.093846",
+        "interaction_count": 0,
+        "interactions": []
+      }
+    },
+    {
+      "type": "environment_update",
+      "timestamp": "2025-08-07T16:43:26.107213",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:43:26.097755",
+        "environment_state": {
+          "digital_infrastructure": {
+            "core_area": 90.93672714351646,
+            "urban_rural_fringe": 60.70581914411353,
+            "rural": 42.13447270673369
+          },
+          "physical_infrastructure": {
+            "core_area": 95,
+            "urban_rural_fringe": 80,
+            "rural": 60
+          },
+          "policy_environment": {
+            "stability": 90,
+            "unified_control": 85,
+            "risk_management": 95
+          },
+          "service_availability": 1.0,
+          "system_load": 0.08403499999999997,
+          "emergency_status": false,
+          "service_quality": {
+            "core_area": 0.895,
+            "urban_rural_fringe": 0.6983333333333333,
+            "rural": 0.5816666666666667
+          },
+          "infrastructure_utilization": {
+            "digital": 0.4595809523809524,
+            "physical": 0.3964952380952381
+          },
+          "update_count": 5
+        }
+      }
+    },
+    {
+      "type": "round_complete",
+      "timestamp": "2025-08-07T16:43:26.116811",
+      "data": {
+        "round": 4,
+        "timestamp": "2025-08-07T16:43:26.110471",
+        "status": "completed"
+      }
+    },
+    {
+      "type": "simulation_complete",
+      "timestamp": "2025-08-07T16:43:26.137395",
+      "data": {
+        "end_time": "2025-08-07T16:43:26.131133",
+        "duration_seconds": 4265.760793,
+        "final_metrics": {
+          "efficiency": {
+            "avg_response_time": 1.0,
+            "resolution_rate": 0.5,
+            "resource_utilization": 0.0,
+            "policy_cost": 0.0
+          },
+          "fairness": {
+            "service_access_gini": 0.0,
+            "usage_depth_gini": 0.0,
+            "satisfaction_gini": 0.003665521191294374,
+            "digital_divide_index": 0.0
+          },
+          "resilience": {
+            "system_recovery_speed": 0.8,
+            "service_disruption_rate": 0.0,
+            "adaptive_capacity": 0.5,
+            "stability_index": 1.0
+          },
+          "agent_status": {
+            "resident_metrics": {
+              "avg_satisfaction": 3.0,
+              "avg_trust": 50.0,
+              "satisfaction_std": 0.0,
+              "trust_std": 0.0,
+              "digital_adoption_rate": 0.0
+            },
+            "enterprise_metrics": {
+              "avg_market_share": 0.10000000000000002,
+              "avg_innovation_level": 50.0,
+              "avg_compliance_rate": 90.0,
+              "market_concentration": 0.3333333333333333
+            },
+            "government_metrics": {
+              "goal_achievement_rate": 0.7200000000000001,
+              "policy_effectiveness": 0.71,
+              "resource_utilization": 0.75,
+              "financial_efficiency": 1.0,
+              "transparency_level": 0.7
+            },
+            "overall_status": {
+              "system_health": 0.618,
+              "stakeholder_balance": 0.910061749578453,
+              "sustainability": 0.5700000000000001
+            }
+          },
+          "collaboration": {
+            "cross_department_sharing_frequency": 0.6,
+            "joint_action_rate": 0.0,
+            "conflict_rate": 0.0,
+            "cooperation_index": 0.6914285714285714,
+            "trust_network_density": 0.05434782608695652
+          }
+        }
+      }
+    }
+  ]
+}

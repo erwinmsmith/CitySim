@@ -1,0 +1,36 @@
+{
+  "government_enterprise": {
+    "procurement_cooperation": {
+      "probability": 0.7,
+      "effect": "提升企业技术能力"
+    },
+    "regulation": {
+      "probability": 0.9,
+      "effect": "限制企业数据行为"
+    },
+    "data_sharing": {
+      "probability": 0.3,
+      "effect": "促进企业创新"
+    }
+  },
+  "government_resident": {
+    "service_provision": {
+      "probability": 0.8,
+      "effect": "提升居民满意度"
+    },
+    "demand_response": {
+      "probability": 0.7,
+      "effect": "提升居民信任度"
+    }
+  },
+  "enterprise_resident": {
+    "service_supply": {
+      "probability": 0.8,
+      "effect": "提升技术接受度"
+    },
+    "data_exchange": {
+      "probability": 0.5,
+      "effect": "企业获取数据，居民获得服务"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "digital_literacy_training": {
+    "target": "resident",
+    "attribute_change": {
+      "information_literacy": "+20"
+    },
+    "behavior_change": {
+      "learn_new_technology": "+0.3"
+    }
+  },
+  "data_open_sharing": {
+    "target": "government_enterprise",
+    "rule_change": {
+      "data_sharing": {
+        "probability": "+0.4"
+      }
+    }
+  },
+  "algorithm_regulation": {
+    "target": "government_enterprise",
+    "rule_change": {
+      "regulation": {
+        "probability": "+0.2",
+        "effect": "增加违规惩罚"
+      }
+    }
+  },
+  "inclusive_infrastructure": {
+    "target": "environment",
+    "attribute_change": {
+      "digital_infrastructure": {
+        "urban_rural_fringe": "+30",
+        "rural": "+40"
+      }
+    }
+  }
+}

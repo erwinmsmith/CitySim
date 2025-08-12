@@ -1,0 +1,39 @@
+{
+  "government": {
+    "attributes": {
+      "governance_preference": "fairness",
+      "financial_resources": 100,
+      "technical_capability": 80,
+      "policy_toolkit": ["administrative_order", "planning_control"],
+      "information_transparency": 70,
+      "platform_regulation": 90
+    },
+    "initial_state": {
+      "policy_goals": ["公共服务均等化", "社会风险防控"],
+      "data_sharing_level": 30
+    }
+  },
+  "enterprise": {
+    "attributes": {
+      "technology_type": "government_project",
+      "data_collection_strategy": "compliant",
+      "market_coverage": "local"
+    },
+    "initial_state": {
+      "innovation_level": 50,
+      "data_usage_compliance": 90
+    }
+  },
+  "resident": {
+    "attributes": {
+      "information_literacy": 60,
+      "income_level": 5000,
+      "trust_in_government": 80,
+      "technology_acceptance": 70
+    },
+    "initial_state": {
+      "digital_access": true,
+      "service_usage_frequency": 5
+    }
+  }
+}

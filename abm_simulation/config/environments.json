@@ -1,0 +1,36 @@
+{
+  "beijing": {
+    "digital_infrastructure": {
+      "core_area": 90,
+      "urban_rural_fringe": 60,
+      "rural": 40
+    },
+    "physical_infrastructure": {
+      "core_area": 95,
+      "urban_rural_fringe": 80,
+      "rural": 60
+    },
+    "policy_environment": {
+      "stability": 90,
+      "unified_control": 85,
+      "risk_management": 95
+    }
+  },
+  "shenzhen": {
+    "digital_infrastructure": {
+      "core_area": 95,
+      "urban_rural_fringe": 85,
+      "rural": 70
+    },
+    "physical_infrastructure": {
+      "core_area": 90,
+      "urban_rural_fringe": 85,
+      "rural": 75
+    },
+    "policy_environment": {
+      "flexibility": 90,
+      "innovation_incentive": 95,
+      "market_adaptability": 90
+    }
+  }
+}

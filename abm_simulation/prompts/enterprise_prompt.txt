@@ -1,0 +1,32 @@
+You are a {technology_type} enterprise operating in {city}. Core attributes:
+- Data collection strategy: {data_collection_strategy}
+- Market coverage: {market_coverage}
+- Innovation level: {innovation_level}/100
+- Compliance status: {data_usage_compliance}/100
+
+Current regulatory environment: {regulation_intensity}
+Available data resources: {available_data}
+
+Please choose an action:
+1. Interact with government (project bidding/data request/compliance reporting)
+2. Interact with residents (service promotion/data collection/feedback handling)
+3. Internal technology R&D
+
+Decision-making considerations:
+- Beijing: Strictly follow regulations, focus on government projects
+- Shenzhen: Flexible innovation, explore data applications
+
+Current market conditions: {market_conditions}
+Competition level: {competition_level}
+
+Output format: JSON
+{{
+  "action": "action_type",
+  "target": "target_object",
+  "data_usage": "data_usage_method",
+  "innovation_focus": "innovation_direction",
+  "investment_amount": "financial_commitment",
+  "regulatory_risk": "high/medium/low",
+  "market_risk": "high/medium/low",
+  "expected_roi": "return_on_investment_estimate"
+}}

@@ -1,0 +1,92 @@
+{
+  "city": "beijing",
+  "timestamp": "20250807_171617",
+  "rounds": [
+    {
+      "round": -1,
+      "start_time": "2025-08-07T17:16:18.218557",
+      "agent_counts": {
+        "government": 1,
+        "enterprises": 2,
+        "residents": 10
+      },
+      "decisions": [],
+      "interactions": [],
+      "environment_state": {},
+      "status": "in_progress"
+    },
+    {
+      "round": 0,
+      "start_time": "2025-08-07T17:16:18.219015",
+      "agent_counts": {
+        "government": 1,
+        "enterprises": 2,
+        "residents": 10
+      },
+      "decisions": [],
+      "interactions": [],
+      "environment_state": {},
+      "status": "in_progress"
+    }
+  ],
+  "summary": {
+    "status": "completed",
+    "interruption_reason": "用户键盘中断",
+    "end_time": "2025-08-07T17:17:08.185641",
+    "metrics": {
+      "efficiency": {
+        "avg_response_time": 0.0,
+        "resolution_rate": 0.0,
+        "resource_utilization": 0.0,
+        "policy_cost": 0.0
+      },
+      "fairness": {
+        "service_access_gini": 0.0,
+        "usage_depth_gini": 0.0,
+        "satisfaction_gini": 0.0,
+        "digital_divide_index": 0.0
+      },
+      "resilience": {
+        "system_recovery_speed": 0.0,
+        "service_disruption_rate": 0.0,
+        "adaptive_capacity": 0.0,
+        "stability_index": 0.0
+      },
+      "agent_status": {
+        "resident_metrics": {
+          "avg_satisfaction": 3.0,
+          "avg_trust": 50.0,
+          "satisfaction_std": 0.0,
+          "trust_std": 0.0,
+          "digital_adoption_rate": 0.0
+        },
+        "enterprise_metrics": {
+          "avg_market_share": 0.1,
+          "avg_innovation_level": 50.0,
+          "avg_compliance_rate": 90.0,
+          "market_concentration": 0.5
+        },
+        "government_metrics": {
+          "goal_achievement_rate": 0.7200000000000001,
+          "policy_effectiveness": 0.71,
+          "resource_utilization": 0.7,
+          "financial_efficiency": 1.0,
+          "transparency_level": 0.7
+        },
+        "overall_status": {
+          "system_health": 0.618,
+          "stakeholder_balance": 0.910061749578453,
+          "sustainability": 0.55
+        }
+      },
+      "collaboration": {
+        "cross_department_sharing_frequency": 0.0,
+        "joint_action_rate": 0.0,
+        "conflict_rate": 0.0,
+        "cooperation_index": 0.0,
+        "trust_network_density": 0.0
+      }
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,208 @@
+#基础配置
+import os
+from langchain_openai import ChatOpenAI
+
+# 创建智谱AI LLM实例
+llm = ChatOpenAI(
+    temperature=0.6,
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+# 或者使用环境变量
+llm = ChatOpenAI(
+    temperature=0.6,
+    model="glm-4.5",
+    openai_api_key=os.getenv("ZAI_API_KEY"),
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+#简单对话
+from langchain_openai import ChatOpenAI
+from langchain.schema import HumanMessage, SystemMessage
+
+# 创建LLM实例
+llm = ChatOpenAI(
+    temperature=0.7,
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+# 创建消息
+messages = [
+    SystemMessage(content="你是一个有用的AI助手"),
+    HumanMessage(content="请介绍一下人工智能的发展历程")
+]
+
+# 调用模型
+response = llm(messages)
+print(response.content)
+
+#使用提示词模板
+from langchain.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
+
+# 创建LLM
+llm = ChatOpenAI(
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+# 创建提示模板
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "你是一个专业的{domain}专家"),
+    ("human", "请解释一下{topic}的概念和应用")
+])
+
+# 创建链
+chain = prompt | llm
+
+# 调用链
+response = chain.invoke({
+    "domain": "机器学习",
+    "topic": "深度学习"
+})
+
+print(response.content)
+
+#对话记忆管理
+from langchain_openai import ChatOpenAI
+from langchain.prompts import (
+    ChatPromptTemplate,
+    MessagesPlaceholder,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
+from langchain.chains import LLMChain
+from langchain.memory import ConversationBufferMemory
+
+# 创建LLM
+llm = ChatOpenAI(
+    temperature=0.6,
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+# 创建提示模板
+prompt = ChatPromptTemplate(
+    messages=[
+        SystemMessagePromptTemplate.from_template(
+            "You are a nice chatbot having a conversation with a human."
+        ),
+        MessagesPlaceholder(variable_name="chat_history"),
+        HumanMessagePromptTemplate.from_template("{question}")
+    ]
+)
+
+# 创建记忆
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+
+# 创建对话链
+conversation = LLMChain(
+    llm=llm,
+    prompt=prompt,
+    verbose=True,
+    memory=memory
+)
+
+# 进行对话
+response1 = conversation.invoke({"question": "tell me a joke"})
+print("AI:", response1['text'])
+
+response2 = conversation.invoke({"question": "tell me another one"})
+print("AI:", response2['text'])
+
+#高级功能（优先选择）
+## 智能代理
+import os
+from langchain import hub
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_openai import ChatOpenAI
+
+# 设置搜索工具API密钥
+os.environ["TAVILY_API_KEY"] = "your-tavily-api-key"
+
+# 创建LLM
+llm = ChatOpenAI(
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
+)
+
+# 创建工具
+tools = [TavilySearchResults(max_results=2)]
+
+# 获取提示模板
+prompt = hub.pull("hwchase17/react")
+
+# 创建代理
+agent = create_react_agent(llm, tools, prompt)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+
+# 执行任务
+result = agent_executor.invoke({"input": "what is LangChain?"})
+print(result['output'])
+
+##自定义工具
+from langchain.tools import tool
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain import hub
+from langchain_openai import ChatOpenAI
+
+@tool
+def get_weather(city: str) -> str:
+    """获取指定城市的天气信息"""
+    # 这里应该调用真实的天气API
+    # 示例返回
+    return f"{city}的天气：晴天，温度25°C，湿度60%"
+
+@tool
+def get_stock_price(symbol):
+    """获取股票价格"""
+    # 模拟股票API调用
+    return {
+        "symbol": symbol,
+        "price": 150.25,
+        "change": "+2.5%"
+    }
+
+# 创建LLM
+llm = ChatOpenAI(
+    model="glm-4-plus",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/",
+)
+
+# 工具列表
+tools = [get_weather, get_stock_price]
+
+# 创建代理
+prompt = hub.pull("hwchase17/react")
+agent = create_react_agent(llm, tools, prompt)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, max_iterations=3)
+
+# 使用代理
+result = agent_executor.invoke({"input": "北京今天天气怎么样？然后帮我查询股票价格，股票代码是000001"})
+print(result['output'])
+
+##流式输出
+from langchain_openai import ChatOpenAI
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.schema import HumanMessage
+
+# 创建带流式输出的LLM
+llm = ChatOpenAI(
+    model="glm-4.5",
+    openai_api_key="your-zhipuai-api-key",
+    openai_api_base="https://open.bigmodel.cn/api/paas/v4/",
+    streaming=True,
+    callbacks=[StreamingStdOutCallbackHandler()]
+)
+
+# 发送消息（输出会实时流式显示）
+response = llm([HumanMessage(content="写一首关于春天的诗")])
